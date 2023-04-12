@@ -7,7 +7,7 @@ using namespace std;
 
 bool check(vector<ll> A, vector<ll> B, int N)
 {
-    unordered_map<int, int> freqA, freqB;
+    unordered_map<int, int> freqA, freqB; // ? unordered_map
     int i;
 
     // Counting element frequency in both arrays

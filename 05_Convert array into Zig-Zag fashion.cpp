@@ -29,6 +29,6 @@ void zigZag(int arr[], int n)
             }
         }
 
-        flag = !flag; // Toggle Flag
+        flag = !flag; // ? Toggle Flag
     }
 }
