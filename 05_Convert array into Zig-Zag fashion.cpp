@@ -11,10 +11,9 @@ void swap(int *a, int *b)
 
 void zigZag(int arr[], int n)
 {
-    bool flag = true;
     for (int i = 0; i < n - 1; i++)
     {
-        if (flag)
+        if (i % 2 == 0)
         {
             if (arr[i] > arr[i + 1])
             {
@@ -28,7 +27,5 @@ void zigZag(int arr[], int n)
                 swap(&arr[i], &arr[i + 1]);
             }
         }
-
-        flag = !flag; // ? Toggle Flag
     }
 }

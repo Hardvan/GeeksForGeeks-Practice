@@ -8,30 +8,26 @@ void swap(int *a, int *b)
 void sort012(int a[], int n)
 {
     int start = 0;
-    int mid = 0;
+    int mid = 0; // mid is the current element
     int end = n - 1;
     while (mid <= end)
     {
-        if (a[mid] == 0)
+        switch (a[mid])
         {
-            // Push to front
+        case 0:
             swap(&a[start], &a[mid]);
-
             start++;
             mid++;
-        }
+            break;
 
-        else if (a[mid] == 1)
-        {
+        case 1:
             mid++;
-        }
+            break;
 
-        else if (a[mid] == 2)
-        {
-            // Push to back
+        case 2:
             swap(&a[mid], &a[end]);
-
             end--;
+            break;
         }
     }
 }
